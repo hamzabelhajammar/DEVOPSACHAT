@@ -37,5 +37,79 @@ public class Stock implements Serializable {
 		this.qte = qte;
 		this.qteMin = qteMin;
 	}
+	/**
+	 * @return the idStock
+	 */
+	public Long getIdStock() {
+		return idStock;
+	}
+	/**
+	 * @param idStock the idStock to set
+	 */
+	public void setIdStock(Long idStock) {
+		this.idStock = idStock;
+	}
+	/**
+	 * @return the libelleStock
+	 */
+	public String getLibelleStock() {
+		return libelleStock;
+	}
+	/**
+	 * @param libelleStock the libelleStock to set
+	 */
+	public void setLibelleStock(String libelleStock) {
+		this.libelleStock = libelleStock;
+	}
+	/**
+	 * @return the qte
+	 */
+	public Integer getQte() {
+		return qte;
+	}
+	/**
+	 * @param qte the qte to set
+	 */
+	public void setQte(Integer qte) {
+		this.qte = qte;
+	}
+	/**
+	 * @return the qteMin
+	 */
+	public Integer getQteMin() {
+		return qteMin;
+	}
+	/**
+	 * @param qteMin the qteMin to set
+	 */
+	public void setQteMin(Integer qteMin) {
+		this.qteMin = qteMin;
+	}
+	/**
+	 * @return the produits
+	 */
+	public Set<Produit> getProduits() {
+		return produits;
+	}
+	/**
+	 * @param produits the produits to set
+	 */
+	public void setProduits(Set<Produit> produits) {
+		this.produits = produits;
+	}
+	/**
+	 * @return the serialversionuid
+	 */
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+	public Stock(Long idStock, String libelleStock, Integer qte, Integer qteMin, Set<Produit> produits) {
+		super();
+		this.idStock = idStock;
+		this.libelleStock = libelleStock;
+		this.qte = qte;
+		this.qteMin = qteMin;
+		this.produits = produits;
+	}
 
 }
