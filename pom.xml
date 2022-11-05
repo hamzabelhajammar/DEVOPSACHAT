@@ -99,11 +99,25 @@
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
         </plugin>
+
+        
         <plugin>
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin> </plugins>  
     </pluginManagement>
 	</build>
+<distributionManagement>
+    <repository>
+      <id>nexus</id>
+      <name>Releases</name>
+      <url>http://192.168.1.183:8081/repository/maven-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://192.168.1.183:8081/repository/maven-snapshots</url>
+    </snapshotRepository>
+</distributionManagement>
 
 </project>
