@@ -14,7 +14,7 @@
 	<name>achat</name>
 	<description>Projet pour le module DevOps</description>
 	<properties>
-		<java.version>1.8</java.version>
+			<java.version>1.8</java.version>
 <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
@@ -111,12 +111,12 @@
     <repository>
       <id>nexus</id>
       <name>Releases</name>
-      <url>http://192.168.1.183:8081/repository/maven-releases</url>
+      <url>http://192.168.1.125:8081/repository/maven-releases</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
       <name>Snapshot</name>
-      <url>http://192.168.1.183:8081/repository/maven-snapshots</url>
+      <url>http://192.168.1.125:8081/repository/maven-snapshots</url>
     </snapshotRepository>
 </distributionManagement>
 
