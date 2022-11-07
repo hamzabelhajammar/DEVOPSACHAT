@@ -57,6 +57,19 @@
 		</dependency>
 
 	</dependencies>
+	<!-- hne bech tzid lel nexsus	 -->
+	<distributionManagement>
+    <repository>
+      <id>nexus-credentials</id>
+      <name>Releases</name>
+      <url>http://http://192.168.1.174:8080/repository/maven-releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Snapshot</name>
+      <url>http://http://192.168.1.174:8081/repository/maven-snapshots</url>
+    </snapshotRepository>
+</distributionManagement>    
 
 	<build>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
